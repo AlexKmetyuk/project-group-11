@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,21 +12,30 @@
   </head>
   <body>
     <!-- шапка сайта -->
-    <header class="page-header"></header>
+    <include src="./partials/page-header"></include>
+
     <!-- основной контент -->
     <main class="page">
       <!-- секция с видами продукции -->
-      <section class="products"></section>
+      <include src="./partials/products"></include>
+
       <!-- секция how it made -->
-      <section class="how-made"></section>
+      <include src="./partials/how-made"></include>
+
       <!-- секция с фотками -->
-      <section class="gallery"></section>
+      <include src="./partials/gallery"></include>
+
       <!-- секция с отзывами -->
-      <section class="feedback"></section>
+      <include src="./partials/feedback"></include>
+
       <!-- секция с заведениями и расписанием работы -->
-      <section class="institution"></section>
+      <include src="./partials/institution"></include>
     </main>
+
     <!-- подвал сайта -->
-    <footer class="page-footer"></footer>
+    <include src="./partials/page-footer"></include>
+
+    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <script src="./index.js"></script>
   </body>
 </html>
