@@ -1,0 +1,17 @@
+.conteiner {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (min-width: 768px) {
+    padding-right: 36px;
+    padding-left: 36px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-right: 114px;
+    padding-left: 114px;
+  }
+}
