@@ -1,0 +1,19 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "main.scss",
+        "utils/_variables.scss",
+        "base/_common.scss",
+        "layouts/_page-header.scss",
+        "layouts/_page.scss",
+        "layouts/_products.scss",
+        "layouts/_how-made.scss",
+        "layouts/_gallery.scss",
+        "layouts/_feedback.scss",
+        "layouts/_institution.scss",
+        "layouts/_page-footer.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
