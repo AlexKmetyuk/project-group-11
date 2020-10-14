@@ -1,0 +1,104 @@
+.institution {
+  margin: 0 auto;
+}
+.branch {
+  display: block;
+}
+
+.branch-office {
+  margin: 0 auto;
+  background-color: $background-button-white;
+  width: 100%;
+
+  border-radius: 24px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  padding: 43px 20px;
+  color: $color-text-grey;
+  font-weight: 500;
+
+  margin-bottom: 20px;
+
+  .city {
+    margin: 0;
+    color: $color-black;
+    margin-bottom: 10px;
+  }
+  .text {
+    margin: 0;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e1e1e1;
+  }
+}
+.branch-office-type {
+  padding: 0px 30px;
+  border-radius: 4px;
+  margin: 0;
+  font-size: 24px;
+  background-color: #f0d1a5;
+  color: $background-button-white;
+  text-align: center;
+
+  font-size: 12px;
+  line-height: 1, 9;
+
+  text-transform: uppercase;
+  width: max-content;
+  margin-bottom: 25px;
+}
+.foodtruck {
+  background-color: #c2e297;
+}
+.branch-office-hours {
+  margin: 0;
+  margin-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e1e1e1;
+
+  .day {
+    color: $color-black;
+  }
+  .time {
+    color: $color-pink;
+  }
+}
+.work:nth-child(2) {
+  margin-bottom: 10px;
+}
+.branch-office-contacts {
+  margin-top: 25px;
+}
+.border {
+  margin: 0;
+  border-bottom: 1px solid #e1e1e1;
+}
+.button {
+  display: block;
+  margin: 0 auto;
+  align-items: center;
+  margin-bottom: 10px;
+  border-radius: 22px;
+  border-color: transparent;
+  width: max-content;
+  height: 44px;
+  font-weight: 700;
+  font-size: 16px;
+
+  &.locations {
+    background-color: $color-accent;
+    color: $background-button-white;
+    fill: $background-button-white;
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+  &.franchise {
+    color: $color-accent;
+    fill: $color-accent;
+    background-color: $background-button-white;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+.btn-icon {
+  width: 5px;
+  height: 8px;
+}
