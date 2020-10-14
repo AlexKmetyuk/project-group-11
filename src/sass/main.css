@@ -210,8 +210,19 @@ img {
 }
 
 .how-made {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 125px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .how-made {
+    padding: 130px 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .how-made {
+    padding: 130px 30px;
+  }
 }
 
 .how-made-caption {
@@ -529,6 +540,32 @@ img {
   line-height: 1.7;
   color: #000000;
   margin-bottom: 38px;
+}
+
+@media screen and (min-width: 768px) {
+  .made-format {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    ont-family: DM Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .made-format {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.02em;
+  }
 }
 
 .gallery {
