@@ -1,0 +1,42 @@
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 122px;
+  margin: 0 auto;
+  align-items: center;
+
+  background-image: url(../images/home-pic5@1x.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/home_pic5@2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    min-height: 264px;
+    background-image: url(../images/home-pic5@1x.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/home_pic5@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-height: 430px;
+    background-image: url(../images/home-pic5@1x.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/home_pic5@2x.jpg);
+    }
+  }
+}
