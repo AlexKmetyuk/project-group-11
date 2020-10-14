@@ -1,4 +1,6 @@
 .how-made-caption {
+    margin-bottom: 15px;
+    margin-top: 0;
     font-family: $font-family-accent;
 font-style: normal;
 font-weight: normal;
@@ -7,4 +9,52 @@ line-height: 1.16;
 text-align: center;
 text-transform: uppercase;
 color:$color-pink;
+}
+.how-made .title {
+    margin-bottom: 26px;
+    margin-top: 0;
+}
+.how-made-text {
+ margin-bottom: 47px; 
+ margin-top: 0; 
+font-family: $font-family;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 1.58;
+color:$color-black;
+}
+
+.how-made-description {
+    margin-bottom: 47px;
+    margin-top: 0;
+font-family: $font-family-accent;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 1.58;
+color:$color-text-grey;
+}
+.description-point {
+    padding-top: 20px;
+}
+
+.made-size {
+font-family: $font-family-accent;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 41px;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color:$color-accent;
+}
+
+.made-format {
+ font-family: $font-family;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 1.7;
+color: $color-black;
 }
