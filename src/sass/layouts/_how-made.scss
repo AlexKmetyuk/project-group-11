@@ -1,3 +1,7 @@
+.how-made {
+    background-color: $background-section;
+}
+
 .how-made-caption {
     margin-bottom: 15px;
     margin-top: 0;
@@ -10,11 +14,23 @@ text-align: center;
 text-transform: uppercase;
 color:$color-pink;
 }
-.how-made .title {
+.how-made-title {
+    font-style: normal;
+font-weight: normal;
+font-size: 34px;
+line-height: 1.14;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: $color-accent;
+    font-family:$font-family-accent ;
     margin-bottom: 26px;
     margin-top: 0;
 }
+
 .how-made-text {
+    padding-right: 30px;
+    padding-left: 30px;
  margin-bottom: 47px; 
  margin-top: 0; 
 font-family: $font-family;
@@ -24,9 +40,27 @@ font-size: 12px;
 line-height: 1.58;
 color:$color-black;
 }
+.made-box .conteiner {
+    padding: 0;
+    }
+
+    .how-made-picture {
+        margin-bottom: 46px;
+    }
+
+.made-box {
+   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+  height: 133px;
+    background-image: url(../images/sectionbg@1x.png);
+}
 
 .how-made-description {
-    margin-bottom: 47px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
     margin-top: 0;
 font-family: $font-family-accent;
 font-style: normal;
@@ -36,10 +70,42 @@ line-height: 1.58;
 color:$color-text-grey;
 }
 .description-point {
+    display: inline-block;
     padding-top: 20px;
+}
+.how-made-button {
+    margin-top: 47px;
+    margin-bottom: 39px;
+}
+
+.made-item:before {
+    display: inline-block;
+    content: "";
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 16px;
+}
+.made-item:nth-child(1)::before {
+    content: "";
+    width: 33px;
+    height: 50px;
+    background-image: url(../images/icon1.png);
+}
+.made-item:nth-child(2)::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/icon2.png);
+}
+.made-item:nth-child(3)::before {
+    content: "";
+    width: 44px;
+    height: 50px;
+    background-image: url(../images/icon3.png);
 }
 
 .made-size {
+    margin-top: 0;
 font-family: $font-family-accent;
 font-style: normal;
 font-weight: normal;
@@ -50,11 +116,15 @@ text-transform: uppercase;
 color:$color-accent;
 }
 
-.made-format {
+.made-format {  
+margin-top: 0;
  font-family: $font-family;
 font-style: normal;
 font-weight: bold;
 font-size: 12px;
 line-height: 1.7;
 color: $color-black;
+}
+.made-format:not(:last-child) {
+    margin-bottom: 38px;
 }
