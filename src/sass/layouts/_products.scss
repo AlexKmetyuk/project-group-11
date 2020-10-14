@@ -1,14 +1,13 @@
-
 .products.section {
   padding-top: 127px;
   padding-bottom: 119px;
 }
 
 .products-list {
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;    
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .product-title {
@@ -29,42 +28,40 @@
   }
 }
 
-
 .product-card {
   position: relative;
   min-height: 485px;
 }
-  
-  @media screen and (min-width: 768px) {
-      .product-card {
-  width: calc((100% - 20px * 2) / 3);
 
-  &:not(:last-child) {
-    margin-right: 20px;
+@media screen and (min-width: 768px) {
+  .product-card {
+    width: calc((100% - 20px * 2) / 3);
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
   }
 }
 
-   @media screen and (min-width: 1200px) {
-       .product-card {
-  width: calc((100% - 30px * 2) / 3);
-  min-height: 525px;
-       
+@media screen and (min-width: 1200px) {
+  .product-card {
+    width: calc((100% - 30px * 2) / 3);
+    min-height: 525px;
 
-  &:not(:last-child) {
-    margin-right: 30px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 
 .product-card:nth-child(1) {
- background-color: $background-head;   
+  background-color: $background-head;
 }
 
 .product-card:nth-child(2) {
- background-color: $background-product-nude ;   
+  background-color: $background-product-nude;
 }
 
 .product-card:nth-child(3) {
- background-color: $background-product-green ;   
+  background-color: $background-product-green;
 }
-
-   
