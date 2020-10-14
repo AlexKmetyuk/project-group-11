@@ -3,14 +3,35 @@
   padding-bottom: 119px;
 }
 
+.secondary-title {
+  font-family: $font-family-accent;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $color-pink;
+}
+
 .products-list {
-  @media screen and (min-width: 768px) {
+  margin-top: 150px;
+}
+
+@media screen and (min-width: 768px) {
+  .products-list {
     display: flex;
     flex-wrap: wrap;
   }
 }
 
 .product-title {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-family: $font-family-accent;
   font-style: normal;
   font-weight: 400;
@@ -31,8 +52,13 @@
 .product-card {
   position: relative;
   min-height: 485px;
+  border-radius: 24px;
 }
-
+@media screen and (max-width: 767px) {
+  .product-card:not(:last-child) {
+    margin-bottom: 18px;
+  }
+}
 @media screen and (min-width: 768px) {
   .product-card {
     width: calc((100% - 20px * 2) / 3);
@@ -41,27 +67,61 @@
       margin-right: 20px;
     }
   }
+}
 
-  @media screen and (min-width: 1200px) {
-    .product-card {
-      width: calc((100% - 30px * 2) / 3);
-      min-height: 525px;
+@media screen and (min-width: 1200px) {
+  .product-card {
+    width: calc((100% - 30px * 2) / 3);
+    min-height: 525px;
 
-      &:not(:last-child) {
-        margin-right: 30px;
-      }
-    }
-
-    .product-card:nth-child(1) {
-      background-color: $background-head;
-    }
-
-    .product-card:nth-child(2) {
-      background-color: $background-product-nude;
-    }
-
-    .product-card:nth-child(3) {
-      background-color: $background-product-green;
+    &:not(:last-child) {
+      margin-right: 30px;
     }
   }
+}
+
+.product-card:nth-child(1) {
+  background-color: $background-head;
+}
+
+.product-card:nth-child(2) {
+  background-color: $background-product-nude;
+}
+
+.product-card:nth-child(3) {
+  background-color: $background-product-green;
+}
+
+.svg-dots {
+  fill: #ffffff;
+  width: 26px;
+  height: 6px;
+}
+
+.products-text {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 176%;
+  /* or 28px */
+
+  text-align: center;
+  color: #ffffff;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.arrow-img {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.product-img {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
