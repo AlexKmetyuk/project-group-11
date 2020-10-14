@@ -5,7 +5,7 @@
 .how-made-caption {
     margin-bottom: 15px;
     margin-top: 0;
-    font-family: $font-family-accent;
+    font-family: 'Titan One';
 font-style: normal;
 font-weight: normal;
 font-size: 18px;
@@ -23,7 +23,7 @@ text-align: center;
 letter-spacing: 0.04em;
 text-transform: uppercase;
 color: $color-accent;
-    font-family:$font-family-accent ;
+    font-family:'Titan One' ;
     margin-bottom: 26px;
     margin-top: 0;
 }
@@ -33,7 +33,7 @@ color: $color-accent;
     padding-left: 30px;
  margin-bottom: 47px; 
  margin-top: 0; 
-font-family: $font-family;
+font-family: 'DM Sans';
 font-style: normal;
 font-weight: 500;
 font-size: 12px;
@@ -49,6 +49,8 @@ color:$color-black;
     }
 
 .made-box {
+    margin-right: auto;
+    margin-left: auto;
    background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -60,9 +62,8 @@ color:$color-black;
 .how-made-description {
     padding-left: 30px;
     padding-right: 30px;
-    
-    margin-top: 0;
-font-family: $font-family-accent;
+     margin-top: 0;
+font-family: 'Titan One';
 font-style: normal;
 font-weight: 500;
 font-size: 12px;
@@ -106,7 +107,8 @@ color:$color-text-grey;
 
 .made-size {
     margin-top: 0;
-font-family: $font-family-accent;
+    margin-bottom: 0;
+font-family: 'Titan One';
 font-style: normal;
 font-weight: normal;
 font-size: 36px;
@@ -116,15 +118,14 @@ text-transform: uppercase;
 color:$color-accent;
 }
 
-.made-format {  
+.made-format {
+display: inline-block;  
 margin-top: 0;
- font-family: $font-family;
+ font-family: 'DM Sans';
 font-style: normal;
 font-weight: bold;
 font-size: 12px;
 line-height: 1.7;
 color: $color-black;
-}
-.made-format:not(:last-child) {
-    margin-bottom: 38px;
+margin-bottom: 38px;
 }
