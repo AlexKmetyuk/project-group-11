@@ -47,7 +47,7 @@
   border-radius: 50%;
   background-color: #fea5bb;
   fill: #ffffff;
-  transition: background-color 250ms $transition;
+  transition: background-color $transition;
   &:hover,
   &:focus {
     background-color: $color-accent;
@@ -68,7 +68,7 @@
 .footer-phone-link {
   text-decoration: none;
   color: $color-accent;
-  transition: color 250ms $transition;
+  transition: color $transition;
   &:hover,
   &:focus {
     color: $color-pink;
