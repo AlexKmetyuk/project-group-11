@@ -1,15 +1,7 @@
 .how-made {
   background-color: $background-section;
 }
-//.how-made {
-//padding: 125px 20px;
-//@media screen and(min-width:768px) {
-// padding: 130px 30px;
-// }
-// @media screen and(min-width:1200px) {
-//  padding: 130px 30px;
-//}
-//}
+
 
 .how-made-caption {
   margin-bottom: 15px;
@@ -32,6 +24,8 @@
   }
 }
 .how-made-title {
+  padding-left: 50px;
+  padding-right: 50px;
   font-style: normal;
   font-weight: normal;
   font-size: 34px;
@@ -57,21 +51,26 @@
 }
 .how-made-box {
   @media screen and(min-width:768px) {
-    width: calc((100% - 30px) / 2);
+    width: calc((100% - 20px) / 2);
+  }
+  @media screen and(min-width:1200px) {
+   width: calc((100% - 30px) / 2);
+   padding-right: 130px;
   }
 }
 
 .how-made-thumb {
-  margin-bottom: 130px;
+  margin-bottom: 39px;
   @media screen and(min-width:768px) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-left: 34px;
     padding-right: 34px;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
-    justify-content: center;
+    padding: 0;
     margin-right: auto;
     margin-left: auto;
     background-size: cover;
@@ -89,10 +88,10 @@
 }
 
 .how-made-text {
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 50px;
+  padding-left: 50px;
   margin-bottom: 47px;
-  margin-top: 47px;
+  margin-top: 0;
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
@@ -101,53 +100,35 @@
   color: $color-black;
   @media screen and(min-width:768px) {
     padding: 0;
-    padding-left: 17px;
     font-size: 14px;
     line-height: 1.78;
+
   }
   @media screen and(min-width:1200px) {
-    padding-left: 74px;
     font-size: 16px;
     line-height: 1.75;
   }
 }
 .how-made-picture {
   margin-bottom: 46px;
+  width: 280px;
+  
   @media screen and (min-width: 768px) {
     width: 340px;
-    height: 339px;
+    
     margin-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
     width: 516px;
-    height: 516px;
+    
   }
 }
 
-.made-box {
-  margin-right: auto;
-  margin-left: auto;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  max-width: 100%;
-  height: 133px;
-
-  background-image: url(../images/sectionbg@1x.png);
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/sectionbg@2x.png);
-  }
-  @media screen and(min-width:768px) {
-    background-image: none;
-  }
-}
 .how-made-button {
   display: inline-block;
   text-align: center;
   padding: 13px 37px;
-  margin-left: 30px;
+  margin-left: 50px;
   min-width: 176px;
 
   color: $color-accent;
@@ -155,17 +136,14 @@
   border-radius: 22px;
   font-weight: 700;
   transition: $transition;
-  margin-top: 30px;
+  margin-top: 17px;
   &:hover {
     background-color: #ecebeb;
   }
 
   @media screen and (min-width: 768px) {
-    margin-left: 17px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-left: 74px;
+    margin-left: 0;
+    margin-top: 60px;
   }
 }
 
@@ -175,8 +153,21 @@
 }
 
 .how-made-description {
-  padding-left: 30px;
-  padding-right: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+  height: 133px;
+   background-image: url(../images/sectionbg@1x.png);
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/sectionbg@2x.png);
+  }
+  padding-left: 50px;
+  padding-right: 50px;
   margin-top: 0;
   font-family: 'DM Sans';
   font-style: normal;
@@ -186,10 +177,14 @@
   color: $color-text-grey;
   @media screen and(min-width:768px) {
     padding: 0;
-    padding-left: 17px;
+    background-image: none;
+    margin: 0;
+    font-size: 14px;
+line-height: 1.78;
+
   }
   @media screen and(min-width:1200px) {
-    padding-left: 74px;
+    //padding-left: 74px;
     font-size: 14px;
     line-height: 1.92;
   }
@@ -197,7 +192,26 @@
 
 .description-point {
   display: block;
-  padding-top: 20px;
+ padding-left: 50px;
+  padding-right: 50px;
+  margin: 0;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  color: $color-text-grey;
+  @media screen and(min-width:768px) {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.78;
+   
+  }
+  @media screen and(min-width:1200px) {
+    font-size: 14px;
+    line-height: 1.92;
+  }
 }
 
 .made {
@@ -276,7 +290,7 @@
 }
 .made-size {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   font-family: 'Titan One';
   font-style: normal;
   font-weight: normal;
