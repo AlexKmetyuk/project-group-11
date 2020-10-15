@@ -41,6 +41,15 @@
       margin-bottom: 54px;
     }
   }
+
+  @media screen and(min-width: 768px) {
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
   @media screen and(min-width: 768px) and(max-width: 1199px) {
     width: calc((100% - 2 * 20px) / 3);
     margin-bottom: 81px;
@@ -53,10 +62,6 @@
     margin-bottom: 86px;
     padding: 50px 44px 60px 44px;
     font-size: 16px;
-
-    &:nth-child(3) {
-      margin-right: 0;
-    }
   }
 }
 
