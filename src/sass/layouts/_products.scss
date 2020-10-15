@@ -22,6 +22,7 @@
 
 @media screen and (min-width: 768px) {
   .products-list {
+
     display: flex;
     flex-wrap: wrap;
   }
@@ -53,7 +54,7 @@
   position: relative;
   min-height: 485px;
   border-radius: 24px;
-}
+
 @media screen and (max-width: 767px) {
   .product-card:not(:last-child) {
     margin-bottom: 18px;
@@ -125,3 +126,4 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
