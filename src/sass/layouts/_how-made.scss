@@ -25,6 +25,8 @@
 }
 }
 
+
+
 .how-made-caption {
   margin-bottom: 15px;
   margin-top: 0;
@@ -46,6 +48,8 @@
   }
 }
 .how-made-title {
+  padding-left: 50px;
+  padding-right: 50px;
   font-style: normal;
   font-weight: normal;
   font-size: 34px;
@@ -77,9 +81,11 @@
 
 .how-made-thumb {
   margin-bottom: 39px;
+
   @media screen and (min-width:768px) {
     display: flex;
     justify-content: space-between;
+
     }
     @media screen and (min-width:768px) {
       margin-bottom: 66px;
@@ -90,10 +96,10 @@
 }
 
 .how-made-text {
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 50px;
+  padding-left: 50px;
   margin-bottom: 47px;
-  margin-top: 47px;
+  margin-top: 0;
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
@@ -102,26 +108,30 @@
   color: $color-black;
   @media screen and (min-width:768px) {
     padding: 0;
-    padding-left: 17px;
     font-size: 14px;
     line-height: 1.78;
+
   }
+
   @media screen and (min-width:1200px) {
     padding-left: 74px;
+
     font-size: 16px;
     line-height: 1.75;
   }
 }
 .how-made-picture {
   margin-bottom: 46px;
+
   @media screen and (min-width:768px) {
+
     width: 340px;
-    height: 339px;
+    
     margin-bottom: 0;
   }
   @media screen and (min-width:1200px) {
     width: 516px;
-    height: 516px;
+    
   }
 }
 
@@ -129,7 +139,7 @@
   display: inline-block;
   text-align: center;
   padding: 13px 37px;
-  margin-left: 30px;
+  margin-left: 50px;
   min-width: 176px;
 
   color: $color-accent;
@@ -137,10 +147,11 @@
   border-radius: 22px;
   font-weight: 700;
   transition: $transition;
-  margin-top: 30px;
+  margin-top: 17px;
   &:hover {
     background-color: #ecebeb;
   }
+
 
   @media screen and (min-width:768px) {
     margin-left: 17px;
@@ -148,6 +159,7 @@
 
   @media screen and (min-width:1200px) {
     margin-left: 74px;
+
   }
 }
 
@@ -157,8 +169,21 @@
 }
 
 .how-made-description {
-  padding-left: 30px;
-  padding-right: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+  height: 133px;
+   background-image: url(../images/sectionbg@1x.png);
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/sectionbg@2x.png);
+  }
+  padding-left: 50px;
+  padding-right: 50px;
   margin-top: 0;
   font-family: 'DM Sans';
   font-style: normal;
@@ -168,8 +193,13 @@
   color: $color-text-grey;
   @media screen and (min-width:768px) {
     padding: 0;
-    padding-left: 17px;
+    background-image: none;
+    margin: 0;
+    font-size: 14px;
+line-height: 1.78;
+
   }
+
   @media screen and (min-width:1200px) {
     padding-left: 74px;
     font-size: 14px;
@@ -181,15 +211,18 @@
   padding-left: 30px;
   padding-right: 30px;
   margin-top: 0;
+
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.58;
   color: $color-text-grey;
+
   @media screen and (min-width:768px) {
     padding: 0;
     padding-left: 17px;
+
   }
   @media screen and (min-width:1200px) {
     padding-left: 74px;
@@ -263,7 +296,7 @@
 }
 .made-size {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   font-family: 'Titan One';
   font-style: normal;
   font-weight: normal;
