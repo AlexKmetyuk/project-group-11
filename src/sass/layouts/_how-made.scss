@@ -1,15 +1,15 @@
 .how-made {
   background-color: $background-section;
 }
-.how-made {
-  padding: 125px 20px;
-  @media screen and(min-width:768px) {
-    padding: 130px 30px;
-  }
-  @media screen and(min-width:1200px) {
-    padding: 130px 30px;
-  }
-}
+//.how-made {
+  //padding: 125px 20px;
+  //@media screen and(min-width:768px) {
+   // padding: 130px 30px;
+ // }
+ // @media screen and(min-width:1200px) {
+  //  padding: 130px 30px;
+//}
+//}
 
 .how-made-caption {
   margin-bottom: 15px;
@@ -22,6 +22,14 @@
   text-align: center;
   text-transform: uppercase;
   color: $color-pink;
+  @media screen and(min-width:768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  @media screen and(min-width:1200px) {
+   font-size: 30px;
+   line-height: 1.13;
+  }
 }
 .how-made-title {
   font-style: normal;
@@ -54,17 +62,22 @@
 }
 
 .how-made-thumb {
+  margin-bottom: 130px;
   @media screen and(min-width:768px) {
     display: flex;
     justify-content: space-between;
+    padding-left: 34px;
+    padding-right: 34px;
   }
   @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
     margin-right: auto;
     margin-left: auto;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    max-width: 100%;
+    max-width: 1600px;
     height: 534px;
     background-image: url(../images/sectionbg@1x.png);
     @media screen and (min-device-pixel-ratio: 2),
@@ -132,17 +145,16 @@
 }
 .how-made-button {
   display: inline-block;
+  text-align: center;
   padding: 13px 37px;
   margin-left: 74px;
-
+  min-width: 176px;
   color: $color-accent;
   background: $background-button-white;
   border-radius: 22px;
-
   font-weight: 700;
-
   transition: $transition;
-
+  margin-top: 30px;
   &:hover {
     background-color: #ecebeb;
   }
@@ -173,10 +185,22 @@
 }
 
 .description-point {
-  display: inline-block;
+  display: block;
   padding-top: 20px;
 }
 
+.made {
+  padding-right: 20px;
+  padding-left: 20px;
+  @media screen and(min-width:768px) {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+  @media screen and(min-width:1200px) {
+    padding-right: 115px;
+    padding-left: 115px;
+  }
+}
 .made-list {
   @media screen and(min-width:768px) {
     display: flex;
