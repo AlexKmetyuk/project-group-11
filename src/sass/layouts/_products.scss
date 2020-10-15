@@ -16,6 +16,16 @@
   color: $color-pink;
 }
 
+.primary.title {
+  margin-bottom: 144px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 150px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 260px;
+  }
+}
 .products-list {
   margin-top: 150px;
 }
@@ -108,6 +118,15 @@
   color: #ffffff;
   padding-left: 40px;
   padding-right: 40px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-left: 44px;
+    padding-right: 44px;
+  }
 }
 
 // .arrow-img {
