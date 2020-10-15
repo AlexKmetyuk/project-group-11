@@ -149,9 +149,19 @@
 
 .product-img {
   position: absolute;
-  top: -60px;
+  top: 10px;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 250px;
+
+  @media screen and (min-width: 768px) {
+    width: 220px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: -50px;
+    width: 335px;
+  }
 }
 
 .products-button {
@@ -164,5 +174,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 160px;
+  margin-top: 161px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 152px;
+  }
 }
