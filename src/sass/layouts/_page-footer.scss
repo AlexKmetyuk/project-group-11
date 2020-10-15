@@ -4,21 +4,17 @@
 .page-footer .container {
   padding-top: 43px;
   padding-bottom: 43px;
-  padding-left: 20px;
-  padding-right: 20px;
+
   @media screen and (min-width: 768px) {
     padding-top: 91px;
     padding-bottom: 91px;
-    padding-left: 36px;
-    padding-right: 36px;
+
     display: flex;
     justify-content: space-between;
   }
   @media screen and (min-width: 1200px) {
     padding-top: 97px;
     padding-bottom: 97px;
-    padding-left: 114px;
-    padding-right: 114px;
   }
 }
 .footer-small-title {
