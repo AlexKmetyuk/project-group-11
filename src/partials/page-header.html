@@ -1,0 +1,144 @@
+<header class="page-header">
+  <div class="container">
+    <nav class="nav">
+      <div class="flexbox nav-bar">
+        <a class="logo" href="#"
+          ><img
+            src="./images/logo@1x.png"
+            alt="логотип"
+            width="199"
+            srcset="./images/logo@1x.png 1x, ./images/logo@2x.png 2x"
+        /></a>
+        <button type="button" class="menu-button" onclick="openNav()">
+          <svg width="20" height="12">
+            <use
+              class="icon-burger"
+              href="./images/symbol-defs.svg#icon-burger"
+            ></use>
+          </svg>
+        </button>
+
+        <a class="button-buy" href="#"
+          >Buy now
+          <svg style="fill: #d41443" width="7" height="9">
+            <use href="./images/symbol-defs.svg#icon-right-arrow"></use>
+          </svg>
+        </a>
+      </div>
+      <div id="myMenu" class="menu">
+        <div class="menu__top">
+          <button class="menu-button menu-button--close" onclick="closeNav()">
+            <svg width="20" height="12">
+              <use href="./images/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <a class="button-buy" href="#"
+            >Buy now
+            <span
+              ><svg style="fill: #d41443" width="7" height="9">
+                <use
+                  href="./images/symbol-defs.svg#icon-right-arrow"
+                ></use></svg
+            ></span>
+          </a>
+        </div>
+        <ul class="list main-nav">
+          <li class="menu__item">
+            <a class="menu__link current" href="#">Home</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">About us</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">How it’s made?</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Our products</a>
+          </li>
+          <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="header__content">
+      <div class="main">
+        <h1 class="header__title">
+          ice cream made with <span class="header__title--red">passion</span>
+        </h1>
+        <ul class="list flexbox">
+          <li class="header__item">
+            <a class="header__button" href="#">Products</a>
+          </li>
+          <li class="header__item">
+            <a class="header__button header__button--white" href="#"
+              >How it’s made?</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="header__content--2 flexbox">
+        <img
+          class="milk"
+          src="./images/slider_pic_head@1x.png"
+          alt="молоко"
+          width="124"
+          srcset="
+            ./images/slider_pic_head@1x.png 1x,
+            ./images/slider_pic_head@2x.png 2x
+          "
+        />
+        <div>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et
+          </p>
+          <button class="btn" type="button">
+            <img
+              class="arrow"
+              src="./images/arrow_right@1x.png"
+              alt="стрелка направо"
+              width="18"
+              srcset="
+                ./images/arrow_right@1x.png 1x,
+                ./images/arrow_right@2x.png 2x
+              "
+            />
+          </button>
+        </div>
+      </div>
+      <div class="cafes">
+        <ul class="list">
+          <li class="cafes__item">
+            <div class="ring"></div>
+            <span>16</span>
+            <p class="paragraph">cafes</p>
+          </li>
+          <li class="cafes__item">
+            <div class="ring"></div>
+            <span>23</span>
+            <p class="paragraph">food trucks</p>
+          </li>
+        </ul>
+      </div>
+      <div class="circle"></div>
+      <img
+        class="icecream"
+        src="./images/icecream@1x.png"
+        alt="мороженое"
+        width="171"
+        srcset="./images/icecream@1x.png 1x, ./images/icecream@2x.png 2x"
+      />
+
+      <img
+        class="girl-img"
+        src="./images/slider_pic_tasty@1x.png"
+        alt="девушка с мороженым"
+        width="168"
+        srcset="
+          ./images/slider_pic_tasty@1x.png 1x,
+          ./images/slider_pic_tasty@2x.png 2x
+        "
+      />
+    </div>
+  </div>
+</header>
