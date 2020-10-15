@@ -1,66 +1,165 @@
+<!DOCTYPE html>
+
 <section class="products section">
-  <h3 class="">100% natural</h3>
-  <h2 class="">products</h2>
-  <ul class="products list">
-    <li class="product-card item">
-      <picture class="product-pic">
-        <source
-          srcset="./images/home_pic1@1x.png, ./images/home_pic1@2x.png"
-          media="(min-width: 320px)"
-        />
+  <div class="container">
+    <h3 class="secondary-title">100% natural</h3>
+    <h2 class="primary title">products</h2>
+    <ul class="products list flexbox">
+      <li class="product-card item">
+        <picture>
+          <source
+            srcset="./images/home_pic1@1x.png 1x, ./images/home_pic1@2x.png 2x"
+          />
+          <img
+            src="./images/home_pic1@1x.png"
+            alt="ice-cream"
+            class="product-img"
+          />
+        </picture>
 
-        <img src="./images/home_pic1@1x.png" alt="ice-cream" />
-      </picture>
-      <h4 class="product-title">Ice cream</h4>
-      <svg class="svg-dots">
-        <use href="./images/symbol-defs.svg#svg-dots"></use>
-      </svg>
-      <p class="products-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et
-      </p>
-      <a class="products-button" href=""></a>
-    </li>
+        <div class="wrapper">
+          <h4 class="product-title">Ice cream</h4>
+          <ul class="dots list flexbox">
+            <li class="dots item">
+              <svg class="svg-dots">
+                <use href="./images/symbol-defs.svg#icon-point"></use>
+              </svg>
+            </li>
+            <li class="dots item">
+              <svg class="svg-dots">
+                <use href="./images/symbol-defs.svg#icon-point"></use>
+              </svg>
+            </li>
+            <li class="dots item">
+              <svg class="svg-dots">
+                <use href="./images/symbol-defs.svg#icon-point"></use>
+              </svg>
+            </li>
+          </ul>
+          <p class="products-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et
+          </p>
+          <a class="products-button" href="#">
+            <picture>
+              <source
+                srcset="
+                  ./images/arrow_right@1x.png 1x,
+                  ./images/arrow_right@2x.png 2x
+                "
+              />
+              <img
+                class="arrow-img"
+                src="./images/arrow_right@1x.png"
+                alt="next"
+              /> </picture
+          ></a>
+        </div>
+      </li>
 
-    <li class="product-card">
-      <picture class="product-pic">
-        <source
-          srcset="./images/home_pic2@1x.png, ./images/home_pic2@2x.png"
-          media="(min-width: 320px)"
-        />
+      <li class="product-card">
+        <picture>
+          <source
+            srcset="./images/home_pic2@1x.png 1x, ./images/home_pic2@2x.png 2x"
+          />
+          <img
+            class="product-img"
+            src="./images/home_pic2@1x.png"
+            alt="ice-coffee"
+          />
+        </picture>
 
-        <img src="./images/home_pic2@1x.png" alt="ice-coffee" />
-      </picture>
-      <h4 class="product-title">Ice coffee</h4>
-      <svg class="svg-dots">
-        <use href="./images/symbol-defs.svg#svg-dots"></use>
-      </svg>
-      <p class="products-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et
-      </p>
-      <a class="products-button" href=""></a>
-    </li>
+        <div class="wrapper">
+          <h4 class="product-title">Ice coffee</h4>
+          <ul class="dots list flexbox">
+            <li class="dots item">
+              <svg class="svg-dots">
+                <use href="./images/symbol-defs.svg#icon-point"></use>
+              </svg>
+            </li>
+            <li class="dots item">
+              <svg class="svg-dots">
+                <use href="./images/symbol-defs.svg#icon-point"></use>
+              </svg>
+            </li>
+            <li class="dots item">
+              <svg class="svg-dots">
+                <use href="./images/symbol-defs.svg#icon-point"></use>
+              </svg>
+            </li>
+          </ul>
+          <p class="products-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et
+          </p>
+          <a class="products-button" href="#"
+            ><picture>
+              <source
+                srcset="
+                  ./images/arrow_right@1x.png 1x,
+                  ./images/arrow_right@2x.png 2x
+                "
+              />
+              <img
+                class="arrow-img"
+                src="./images/arrow_right@1x.png"
+                alt="next"
+              /> </picture
+          ></a>
+        </div>
+      </li>
 
-    <li class="product-card">
-      <picture class="product-pic">
-        <source
-          srcset="./images/home_pic3@1x.png, ./images/home_pic3@2x.png"
-          media="(min-width: 320px)"
-        />
+      <li class="product-card">
+        <picture>
+          <source
+            srcset="./images/home_pic3@1x.png 1x, ./images/home_pic3@2x.png 2x"
+          />
+          <img
+            class="product-img"
+            src="./images/home_pic3@1x.png"
+            alt="milkshake"
+          />
+        </picture>
 
-        <img src="./images/home_pic3@1x.png" alt="milkshake" />
-      </picture>
-
-      <h4 class="product-title">Milkshakes</h4>
-      <svg class="svg-dots">
-        <use href="./images/symbol-defs.svg#svg-dots"></use>
-      </svg>
-      <p class="products-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et
-      </p>
-      <a class="products-button" href=""></a>
-    </li>
-  </ul>
+        <div class="wrapper">
+          <h4 class="product-title">Milkshakes</h4>
+          <ul class="dots list flexbox">
+            <li class="dots item">
+              <svg class="svg-dots">
+                <use href="./images/symbol-defs.svg#icon-point"></use>
+              </svg>
+            </li>
+            <li class="dots item">
+              <svg class="svg-dots">
+                <use href="./images/symbol-defs.svg#icon-point"></use>
+              </svg>
+            </li>
+            <li class="dots item">
+              <svg class="svg-dots">
+                <use href="./images/symbol-defs.svg#icon-point"></use>
+              </svg>
+            </li>
+          </ul>
+          <p class="products-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et
+          </p>
+          <a class="products-button" href="#"
+            ><picture>
+              <source
+                srcset="
+                  ./images/arrow_right@1x.png 1x,
+                  ./images/arrow_right@2x.png 2x
+                "
+              />
+              <img
+                class="arrow-img"
+                src="./images/arrow_right@1x.png"
+                alt="next"
+              /> </picture
+          ></a>
+        </div>
+      </li>
+    </ul>
+  </div>
 </section>

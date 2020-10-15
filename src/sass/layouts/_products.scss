@@ -3,8 +3,41 @@
   padding-bottom: 119px;
 }
 
-.products-list {
+.secondary-title {
+  font-family: $font-family-accent;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $color-pink;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+  }
+}
+
+.primary.title {
+  margin-bottom: 144px;
+
   @media screen and (min-width: 768px) {
+    font-size: 34px;
+    margin-bottom: 150px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 48px;
+    margin-bottom: 260px;
+  }
+}
+.products-list {
+  margin-top: 150px;
+}
+
+@media screen and (min-width: 768px) {
+  .products-list {
     display: flex;
     flex-wrap: wrap;
   }
@@ -21,6 +54,8 @@
   text-transform: uppercase;
 
   color: #ffffff;
+  margin-top: 22px;
+  margin-bottom: 30px;
 
   @media screen and (min-width: 1200px) {
     font-size: 30px;
@@ -30,7 +65,17 @@
 
 .product-card {
   position: relative;
+  display: inline-block;
   min-height: 485px;
+  border-radius: 24px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 130px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -64,4 +109,81 @@
 
 .product-card:nth-child(3) {
   background-color: $background-product-green;
+}
+
+.dots.item:not(:last-child) {
+  margin-right: 4px;
+}
+
+.svg-dots {
+  fill: #ffffff;
+  width: 6px;
+  height: 6px;
+  transition: $transition;
+}
+
+.dots .svg-dots:hover,
+.dots .svg-dots:focus {
+  fill: $color-accent;
+  transition: $transition;
+}
+.products-text {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 176%;
+  /* or 28px */
+
+  text-align: center;
+  color: #ffffff;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-left: 46px;
+    padding-right: 46px;
+    font-size: 16px;
+  }
+}
+
+.product-img {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+
+  @media screen and (min-width: 768px) {
+    width: 220px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: -50px;
+    width: 335px;
+  }
+}
+
+.products-button {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 161px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 152px;
+  }
 }
