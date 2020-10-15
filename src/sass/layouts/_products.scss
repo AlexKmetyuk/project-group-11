@@ -14,15 +14,21 @@
   text-transform: uppercase;
 
   color: $color-pink;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+  }
 }
 
 .primary.title {
   margin-bottom: 144px;
 
   @media screen and (min-width: 768px) {
+    font-size: 34px;
     margin-bottom: 150px;
   }
   @media screen and (min-width: 1200px) {
+    font-size: 48px;
     margin-bottom: 260px;
   }
 }
@@ -131,12 +137,12 @@
   margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
-    padding-left: 11px;
-    padding-right: 11px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
   @media screen and (min-width: 1200px) {
-    padding-left: 44px;
-    padding-right: 44px;
+    padding-left: 46px;
+    padding-right: 46px;
     font-size: 16px;
   }
 }
