@@ -195,6 +195,7 @@
     background-color: $background-button-white;
     padding-left: 32px;
     padding-right: 32px;
+
     @media screen and(min-width: 768px) {
       margin: 0;
       width: 174px;
@@ -211,5 +212,10 @@
     @media screen and(min-width: 768px) {
       margin-left: 12px;
     }
+  }
+}
+.franchise {
+  &:hover {
+    background-color: #ecebeb;
   }
 }
