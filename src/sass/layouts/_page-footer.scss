@@ -31,6 +31,7 @@
   line-height: 1.17;
   text-transform: uppercase;
   color: $color-pink;
+
   @media screen and (min-width: 768px) {
     margin-bottom: 16px;
     width: 340px;
@@ -45,6 +46,7 @@
     line-height: 1.13;
   }
 }
+
 .footer-big-title {
   margin-top: 0;
   margin-bottom: 43px;
@@ -57,6 +59,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $color-accent;
+
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
     width: 340px;
@@ -70,6 +73,7 @@
     line-height: 1.13;
   }
 }
+
 .footer-social-links-list {
   display: flex;
   justify-content: flex-end;
@@ -91,17 +95,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 34px;
-  height: 34px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   background-color: #fea5bb;
   fill: #ffffff;
   transition: background-color $transition;
+
   &:hover,
   &:focus {
     background-color: $color-accent;
   }
+
+  @media screen and (min-width: 768px) {
+    width: 34px;
+    height: 34px;
+  }
 }
+
 .footer-phone-text {
   margin: 0;
   font-family: $font-family;
