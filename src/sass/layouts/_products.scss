@@ -110,16 +110,24 @@
   padding-right: 40px;
 }
 
-.arrow-img {
-  position: absolute;
-  bottom: 8%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+// .arrow-img {
+//   position: absolute;
+//   bottom: 8%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+// }
 
 .product-img {
   position: absolute;
   top: 0%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 130px;
 }
