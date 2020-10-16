@@ -1,20 +1,16 @@
 .institution {
   margin: 0 auto;
   background-color: $background-section;
-  margin-top: 86px;
-
   @media screen and(min-width: 768px) {
     display: flex;
     margin: 0;
   }
-
   @media screen and(min-width: 1200px) {
     margin: 0 auto;
     background-image: url(../images/sectionbg3@1x.png);
     width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
-
     @media screen and (min-device-pixel-ratio: 2),
       screen and(min-resolution: 192dpi),
       screen and(min-resolution: 2dppx) {
@@ -24,14 +20,19 @@
 }
 .branch {
   display: block;
+  transform: translateY(-7%);
+  margin: 0;
 
   @media screen and(min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
+    transform: translateY(-14%);
+  }
+  @media screen and(min-width: 1200px) {
+    transform: translateY(-18%);
   }
 }
-
 .branch-office {
   margin: 0 auto;
   background-color: $background-button-white;
@@ -43,15 +44,12 @@
   color: $color-text-grey;
   font-weight: 500;
   margin-bottom: 20px;
-
   @media screen and(max-width: 767px) {
     max-width: 220px;
-
     &:last-child {
-      margin-bottom: 54px;
+      margin-bottom: 0px;
     }
   }
-
   @media screen and(min-width: 768px) {
     &:first-child {
       margin-left: 0;
@@ -62,19 +60,17 @@
   }
   @media screen and(min-width: 768px) and(max-width: 1199px) {
     width: calc((100% - 2 * 20px) / 3);
-    margin-bottom: 81px;
+    //margin-bottom: 81px;
     padding: 50px 30px;
     font-size: 14px;
   }
-
   @media screen and(min-width: 1200px) {
-    width: calc((100% - 2 * 31px) / 3);
-    margin-bottom: 86px;
+    width: calc((100% - 2 * 30px) / 3);
+    //margin-bottom: 86px;
     padding: 50px 44px 60px 44px;
     font-size: 16px;
   }
 }
-
 .city {
   margin: 0;
   color: $color-black;
@@ -91,7 +87,6 @@
     padding-bottom: 32px;
   }
 }
-
 .branch-office-type {
   padding: 5px 30px;
   border-radius: 4px;
@@ -105,7 +100,6 @@
   text-transform: uppercase;
   width: max-content;
   margin-bottom: 20px;
-
   @media screen and(min-width: 768px) {
     margin-bottom: 30px;
     padding: 5px 20px;
@@ -124,7 +118,6 @@
   margin-top: 25px;
   padding-bottom: 25px;
   border-bottom: 1px solid #e1e1e1;
-
   @media screen and(min-width: 768px) {
     margin-top: 30px;
     padding-bottom: 30px;
@@ -140,7 +133,6 @@
 .time {
   color: $color-pink;
 }
-
 .work:nth-child(2) {
   margin-bottom: 10px;
   @media screen and(min-width: 768px) {
@@ -153,10 +145,8 @@
     margin-top: 30px;
   }
 }
-
 .button-container {
   padding-bottom: 70px;
-
   @media screen and(min-width: 768px) {
     display: flex;
     justify-content: center;
@@ -166,21 +156,17 @@
     padding-bottom: 68px;
   }
 }
-
 .button {
   display: block;
   margin: 0 auto;
   width: 162px;
-
   border-radius: 22px;
   border-color: transparent;
-
   font-weight: 700;
   font-size: 16px;
   text-align: center;
   transition: $transition;
   padding: 14px 17px;
-
   &.locations {
     background-color: $color-accent;
     color: $background-button-white;
@@ -208,17 +194,14 @@
       width: 180px;
     }
   }
-
   & .btn-icon {
     vertical-align: middle;
     align-items: center;
-
     @media screen and(min-width: 768px) {
       margin-left: 12px;
     }
   }
 }
-
 .franchise {
   &:hover {
     background-color: #ecebeb;
