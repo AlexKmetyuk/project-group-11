@@ -11,9 +11,11 @@
 
   @media screen and(min-width: 1200px) {
     margin: 0 auto;
-       background-image: url(../images/sectionbg3@1x.png);
-    background-repeat: no-repeat;
+    background-image: url(../images/sectionbg3@1x.png);
+    width: 100%;
     background-size: contain;
+    background-repeat: no-repeat;
+
     @media screen and (min-device-pixel-ratio: 2),
       screen and(min-resolution: 192dpi),
       screen and(min-resolution: 2dppx) {
