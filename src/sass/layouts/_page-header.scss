@@ -69,8 +69,8 @@
 
 .menu__top {
   padding-top: 60px;
-  padding-left: 20px;
-  padding-right: 20px;
+  // padding-left: 20px;
+  // padding-right: 20px;
   padding-bottom: 20px;
   @media screen and (min-width: 1200px) {
     display: none;
@@ -97,7 +97,7 @@
 }
 
 .menu__link {
-  padding: 21px 12px;
+  padding: 17px 21px;
   display: block;
 
   font-style: normal;
@@ -163,8 +163,15 @@
   }
 }
 
+.menu__top .button-buy {
+  padding: 15px 60px;
+  @media screen and (min-width: 768px) {
+    padding: 15px 50px;
+  }
+}
+
 .button-buy svg {
-  margin-left: 14px;
+  margin-left: 13px;
 }
 
 .header__button {
@@ -285,7 +292,7 @@
     height: 336px;
     width: 143px;
     top: -24px;
-    left: 300px;
+    left: 330px;
   }
   @media screen and(min-width:1200px) {
     width: 236px;
@@ -303,7 +310,7 @@
   top: 0;
   left: 0;
   @media screen and(min-width:768px) {
-    left: 230px;
+    left: 260px;
     top: -54px;
     width: 324px;
     height: 324px;
@@ -365,9 +372,11 @@
   top: 0;
   @media screen and(min-width:768px) {
     display: block;
+    right: 7px;
   }
   @media screen and(min-width:1200px) {
     top: 80px;
+    right: 0;
   }
   text-align: right;
   &__item:first-child {
