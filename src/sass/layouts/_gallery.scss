@@ -1,14 +1,13 @@
 .gallery {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   width: 100%;
-  height: 122px;
+  min-height: 122px;
   margin: 0 auto;
   align-items: center;
 
   background-image: url(../images/home-pic5@1x.jpg);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 
@@ -19,10 +18,10 @@
   }
 
   @media screen and (min-width: 768px) {
-    height: 264px;
+    min-height: 264px;
   }
 
   @media screen and (min-width: 1200px) {
-    height: 430px;
+    min-height: 430px;
   }
 }
