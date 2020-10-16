@@ -9,7 +9,7 @@
     margin-left: auto;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position-y: 47%;
+    background-position-y: 52%;
     width: 100%;
     height: 100%;
     background-image: url(../images/sectionbg@1x.png);
@@ -118,7 +118,6 @@
   }
   @media screen and (min-width: 1200px) {
     padding-left: 74px;
-
     font-size: 16px;
     line-height: 1.75;
   }
@@ -267,10 +266,16 @@
 }
 
 .made-item {
+  @media screen and (min-width: 320px) and (max-width:767px) {
+    &:not(:last-child) {
+      margin-bottom: 38px;
+    }
+  }
   @media screen and (min-width: 768px) {
     &:not(:last-child) {
       margin-right: 60px;
     }
+    margin-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
     &:not(:last-child) {
@@ -303,7 +308,7 @@
   margin: 0;
   font-family: 'DM Sans';
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 12px;
   line-height: 1.7;
   color: $color-black;
@@ -311,14 +316,10 @@
     display: flex;
     text-align: start;
     justify-content: start;
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: 700;
     font-size: 14px;
     line-height: 1.71;
   }
   @media screen and (min-width: 1200px) {
-    font-weight: bold;
     font-size: 16px;
     line-height: 1.75;
     letter-spacing: 0.02em;
