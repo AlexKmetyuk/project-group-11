@@ -37,5 +37,14 @@
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
+    <script>
+      function openNav() {
+        document.getElementById('myMenu').style.transform = 'translate(0)';
+      }
+
+      function closeNav() {
+        document.getElementById('myMenu').style.transform = 'translate(100%)';
+      }
+    </script>
   </body>
 </html>
