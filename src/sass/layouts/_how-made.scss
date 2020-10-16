@@ -300,19 +300,18 @@
 
 .made-format {
   display: inline-block;
-  margin-top: 0;
+  margin: 0;
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 1.7;
   color: $color-black;
-  margin-bottom: 38px;
   @media screen and (min-width: 768px) {
     display: flex;
     text-align: start;
     justify-content: start;
-    ont-family: DM Sans;
+    font-family: DM Sans;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
