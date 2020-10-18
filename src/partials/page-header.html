@@ -3,12 +3,28 @@
     <nav class="nav">
       <div class="flexbox nav-bar">
         <a class="logo" href="#"
-          ><img
-            src="./images/logo@1x.png"
-            alt="логотип"
-            width="199"
-            srcset="./images/logo@1x.png 1x, ./images/logo@2x.png 2x"
-        /></a>
+          ><picture>
+            <source
+              srcset="./images/logo@1x.png 1x, ./images/logo@2x.png 2x"
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./images/tablet/logo1tablet@1x-min.png 1x,
+                ./images/tablet/logotablet@2x-min.png  2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/mobile/logo1mobile@1x-min.png 1x,
+                ./images/mobile/logo1mobile@2x-min.png 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img src="./images/logo@1x.png" alt="логотип" />
+          </picture>
+        </a>
         <button type="button" class="menu-button" onclick="openNav()">
           <svg width="20" height="12">
             <use
@@ -78,32 +94,58 @@
         </ul>
       </div>
       <div class="header__content--2 flexbox">
-        <img
-          class="milk"
-          src="./images/slider_pic_head@1x.png"
-          alt="молоко"
-          width="124"
-          srcset="
-            ./images/slider_pic_head@1x.png 1x,
-            ./images/slider_pic_head@2x.png 2x
-          "
-        />
+        <picture>
+          <source
+            srcset="
+              ./images/slider_pic_head@1x.png 1x,
+              ./images/slider_pic_head@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/tablet/slider_1tablet@1x-min.png 1x,
+              ./images/tablet/slider_1tablet@2x-min.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+
+          <img
+            src="./images/slider_pic_head@1x.png"
+            alt="молоко"
+            class="milk"
+          />
+        </picture>
+
         <div>
           <p class="paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et
           </p>
           <button class="btn" type="button">
-            <img
-              class="arrow"
-              src="./images/arrow_right@1x.png"
-              alt="стрелка направо"
-              width="18"
-              srcset="
-                ./images/arrow_right@1x.png 1x,
-                ./images/arrow_right@2x.png 2x
-              "
-            />
+            <picture>
+              <source
+                srcset="
+                  ./images/arrow_right@1x.png 1x,
+                  ./images/arrow_right@2x.png 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/tablet/arrow_right_tablet@1x-min.png 1x,
+                  ./images/tablet/arrow_right_tablet@2x-min.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+
+              <img
+                src="./images/arrow_right@1x.png"
+                alt="стрелка направо"
+                class="arrow"
+                width="18"
+              />
+            </picture>
           </button>
         </div>
       </div>
@@ -122,24 +164,47 @@
         </ul>
       </div>
       <div class="circle"></div>
-      <img
-        class="icecream"
-        src="./images/icecream@1x.png"
-        alt="мороженое"
-        width="171"
-        srcset="./images/icecream@1x.png 1x, ./images/icecream@2x.png 2x"
-      />
+      <picture>
+        <source
+          srcset="./images/icecream@1x.png 1x, ./images/icecream@2x.png 2x"
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/tablet/slider_2tablet@1x-min.png 1x,
+            ./images/tablet/slider_2tablet@2x-min.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/mobile/icecream-mobile@1x.png 1x,
+            ./images/mobile/icecream-mobile@2x.png 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img src="./images/icecream@1x.png" alt="мороженое" class="icecream" />
+      </picture>
 
-      <img
-        class="girl-img"
-        src="./images/slider_pic_tasty@1x.png"
-        alt="девушка с мороженым"
-        width="168"
-        srcset="
-          ./images/slider_pic_tasty@1x.png 1x,
-          ./images/slider_pic_tasty@2x.png 2x
-        "
-      />
+      <picture>
+        <source
+          srcset="
+            ./images/slider_pic_tasty@1x.png 1x,
+            ./images/slider_pic_tasty@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/tablet/slider_3tablet@1x-min.png 1x,
+            ./images/tablet/slider_3tablet@2x-min.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+
+        <img src="./images/slider_pic_tasty@1x.png" alt="девушка с мороженым""
+        class="girl-img" />
+      </picture>
     </div>
   </div>
 </header>

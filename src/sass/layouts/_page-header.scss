@@ -69,8 +69,6 @@
 
 .menu__top {
   padding-top: 60px;
-  // padding-left: 20px;
-  // padding-right: 20px;
   padding-bottom: 20px;
   @media screen and (min-width: 1200px) {
     display: none;
@@ -178,10 +176,7 @@
 }
 
 .header__button {
-  height: 24px;
-  padding-right: 15px;
-  padding-left: 15px;
-
+  padding: 7px 15px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -206,11 +201,9 @@
   }
 
   @media screen and(min-width:1200px) {
-    height: 40px;
+    padding: 11px 25px;
     font-size: 14px;
     line-height: 18px;
-    padding-right: 25px;
-    padding-left: 25px;
   }
 }
 
@@ -292,20 +285,16 @@
 
 .icecream {
   @media screen and(min-width:768px) {
-    height: 336px;
-    width: 143px;
     top: -24px;
     left: 330px;
   }
   @media screen and(min-width:1200px) {
-    width: 236px;
-    height: 557px;
     top: 17px;
     left: 480px;
   }
 
   position: absolute;
-  top: 41px;
+  top: 35px;
   left: 117px;
 }
 
@@ -431,7 +420,6 @@
 
 .milk {
   @media screen and(min-width:1200px) {
-    width: 188px;
     margin-right: 30px;
   }
 }
