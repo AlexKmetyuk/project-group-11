@@ -262,19 +262,24 @@
 
 .header__content {
   @media screen and(min-width:768px) {
-    padding-top: 15px;
-    padding-bottom: 27px;
+    min-height: 312px;
   }
 
   @media screen and(min-width:1200px) {
-    padding-top: 84px;
-    padding-bottom: 35px;
+    min-height: 578px;
   }
   position: relative;
   z-index: 9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-  padding-top: 137px;
-  padding-bottom: 160px;
+  min-height: 446px;
+}
+
+.header__content--1 {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header__item {
@@ -285,25 +290,28 @@
 
 .icecream {
   @media screen and(min-width:768px) {
-    top: -24px;
     left: 330px;
   }
   @media screen and(min-width:1200px) {
-    top: 17px;
     left: 480px;
   }
 
   position: absolute;
-  top: 35px;
-  left: 117px;
+  bottom: 0;
+  left: 110px;
 }
 
 .circle {
-  top: 0;
+  bottom: 76px;
   left: 0;
+  position: absolute;
+  width: 345px;
+  height: 345px;
+  background-color: $color-pink;
+  border-radius: 50%;
   @media screen and(min-width:768px) {
     left: 260px;
-    top: -54px;
+    bottom: 45px;
     width: 324px;
     height: 324px;
   }
@@ -311,13 +319,8 @@
     width: 538px;
     height: 538px;
     left: 360px;
-    top: -45px;
+    bottom: 70px;
   }
-  position: absolute;
-  width: 345px;
-  height: 345px;
-  background-color: $color-pink;
-  border-radius: 50%;
 }
 
 .paragraph {
@@ -359,16 +362,12 @@
 .cafes {
   display: none;
 
-  position: absolute;
-  right: 0;
-  top: 0;
   @media screen and(min-width:768px) {
     display: block;
-    right: 7px;
+    margin-right: 7px;
   }
   @media screen and(min-width:1200px) {
-    top: 80px;
-    right: 0;
+    margin-right: 0;
   }
   text-align: right;
   &__item:first-child {
@@ -392,7 +391,7 @@
 
 .ring {
   position: absolute;
-  right: -6px;
+  right: 0px;
   background-color: $background-button-white;
   width: 16px;
   height: 16px;
@@ -410,9 +409,7 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  @media screen and(min-width:1200px) {
-    width: 293px;
-  }
+
   @media screen and(min-width:768px) {
     display: block;
   }
